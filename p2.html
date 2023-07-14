@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
-<body>
-
+  <body style="background-color: #B0C4DE;">
+ 
 <h2><center>Application Form</center></h2>
+<head> 
+  <script type = "text/javascript">
+  function fun() {
+     alert ("please fill the form");
+  }
+</script>
+  </head>
+<hr>
 
-<form>
+<form >
+  <table> 
+  <p>Student name:</p>
   <p><label>First name:<input type='text' value=""/></label></p>
   <p><label>Last name:<input type="text" value=""/></label></p>
-  <p><label>DOB: <input type="date"/></label></p>
+  <p><label>DOB:<input type="date"/></label></p>
   <p><label>Age:<input type="text" value=""/></label></p>
   
   <p><label>Branch:</label>
@@ -15,6 +25,9 @@
   <p>Gender:
   <label >Male<input type="radio" name="gender" value="male"/></label>
 <label >Female<input type="radio" name="gender" value="female"/></label></p>
+<label> 
+  Moblie No
+      <input type="text" name="Mobile" placeholder="Moblie Number" /></label  >
 <p><label>Email:<input type="text"/></label></p>  
 <p><label for="fname">Father's first name:</label>
   <input type="text" value="">
@@ -25,8 +38,12 @@
   <label>Government Employee<input type="checkbox"/></label>
   <label>Farmer<input type="checkbox"/></label>
   <label>Business Men<input type="checkbox"/></label>
-</p>
+  </p>
+
 <p><label>Address<input type="text"/></label></p>
+ 
+<input type = "button" value = "submit" onclick = "fun();" />
+</table>
 </form>
 </body>
 </html>
